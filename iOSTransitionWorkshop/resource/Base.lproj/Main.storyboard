@@ -98,7 +98,7 @@
         <!--Navigation Controller-->
         <scene sceneID="0jE-jz-GLV">
             <objects>
-                <navigationController id="De1-gW-jf3" sceneMemberID="viewController">
+                <navigationController id="De1-gW-jf3" customClass="NavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oCX-Dz-jJ0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

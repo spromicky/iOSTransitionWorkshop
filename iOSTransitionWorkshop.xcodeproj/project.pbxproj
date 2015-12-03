@@ -17,6 +17,7 @@
 		0101C5BE1C1067D200F6DAA3 /* NavigationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0101C5BD1C1067D200F6DAA3 /* NavigationDelegate.m */; };
 		0101C5C11C106AB500F6DAA3 /* PushNavigationAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0101C5C01C106AB500F6DAA3 /* PushNavigationAnimator.m */; };
 		0101C5C41C107A1500F6DAA3 /* PopNavigationAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0101C5C31C107A1500F6DAA3 /* PopNavigationAnimator.m */; };
+		42CAAE901C10E9EC0034999B /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CAAE8F1C10E9EC0034999B /* NavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		0101C5C01C106AB500F6DAA3 /* PushNavigationAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNavigationAnimator.m; sourceTree = "<group>"; };
 		0101C5C21C107A1500F6DAA3 /* PopNavigationAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopNavigationAnimator.h; sourceTree = "<group>"; };
 		0101C5C31C107A1500F6DAA3 /* PopNavigationAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopNavigationAnimator.m; sourceTree = "<group>"; };
+		42CAAE8E1C10E9EC0034999B /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		42CAAE8F1C10E9EC0034999B /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				0101C5BA1C10679600F6DAA3 /* Delegates */,
 				0101C5BB1C1067B200F6DAA3 /* Transitions */,
 				0101C5B61C105E7800F6DAA3 /* ViewControllers */,
+				42CAAE8E1C10E9EC0034999B /* NavigationController.h */,
+				42CAAE8F1C10E9EC0034999B /* NavigationController.m */,
 				0101C59B1C105BFA00F6DAA3 /* AppDelegate.h */,
 				0101C59C1C105BFA00F6DAA3 /* AppDelegate.m */,
 			);
@@ -222,6 +227,7 @@
 				0101C5C41C107A1500F6DAA3 /* PopNavigationAnimator.m in Sources */,
 				0101C5B91C105EA300F6DAA3 /* PushViewController.m in Sources */,
 				0101C59D1C105BFA00F6DAA3 /* AppDelegate.m in Sources */,
+				42CAAE901C10E9EC0034999B /* NavigationController.m in Sources */,
 				0101C5C11C106AB500F6DAA3 /* PushNavigationAnimator.m in Sources */,
 				0101C59A1C105BFA00F6DAA3 /* main.m in Sources */,
 			);
