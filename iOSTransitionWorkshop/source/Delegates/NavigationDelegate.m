@@ -16,10 +16,7 @@
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC
 {
-    if (operation == UINavigationControllerOperationPush) {
-        return [[PushNavigationAnimator alloc] init];
-    }
-    return nil;
+    return [[PushNavigationAnimator alloc] initWithReverse:operation == UINavigationControllerOperationPop];
 }
 
 @end
