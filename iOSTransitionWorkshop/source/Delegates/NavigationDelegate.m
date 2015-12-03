@@ -8,6 +8,8 @@
 
 #import "NavigationDelegate.h"
 #import "PushNavigationAnimator.h"
+#import "PopNavigationAnimator.h"
+#import "PushViewController.h"
 
 @implementation NavigationDelegate
 
@@ -16,7 +18,20 @@
                                                fromViewController:(UIViewController *)fromVC
                                                  toViewController:(UIViewController *)toVC
 {
-    return [[PushNavigationAnimator alloc] initWithReverse:operation == UINavigationControllerOperationPop];
+    if (operation == UINavigationControllerOperationPush) {
+        return [[PushNavigationAnimator alloc] init];
+    } else {
+        return ((PushViewController *)fromVC).popAnimator;
+    } 
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
+                         interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController
+{
+    if ([animationController isKindOfClass:[PopNavigationAnimator class]] && ((PopNavigationAnimator*)animationController).interactive) {
+        return (PopNavigationAnimator*)animationController;
+    }
+    return nil;
 }
 
 @end

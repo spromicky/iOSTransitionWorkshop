@@ -63,9 +63,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ay-iW-7gH">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ay-iW-7gH">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <animations/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="C8o-4i-gge" appends="YES" id="PET-Xb-CWI"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <animations/>
@@ -83,6 +87,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zd1-ZB-53w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="C8o-4i-gge">
+                    <connections>
+                        <action selector="hadlePinch:" destination="hFx-sE-wpb" id="jRo-zk-IdB"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1175" y="424"/>
         </scene>

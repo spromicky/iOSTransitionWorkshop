@@ -10,8 +10,4 @@
 
 @interface PushNavigationAnimator : NSObject <UIViewControllerAnimatedTransitioning>
 
-@property (nonatomic, readonly) BOOL reverse;
-
-- (instancetype)initWithReverse:(BOOL)reverse;
-
 @end

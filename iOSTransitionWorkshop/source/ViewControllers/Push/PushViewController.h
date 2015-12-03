@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PopNavigationAnimator.h"
 
 @interface PushViewController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) UIImage *image;
+
+@property (nonatomic, readonly) PopNavigationAnimator *popAnimator;
+
+- (IBAction)hadlePinch:(UIPinchGestureRecognizer *)sender;
 
 @end

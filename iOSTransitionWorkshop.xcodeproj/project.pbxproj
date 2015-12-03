@@ -16,6 +16,7 @@
 		0101C5B91C105EA300F6DAA3 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0101C5B81C105EA300F6DAA3 /* PushViewController.m */; };
 		0101C5BE1C1067D200F6DAA3 /* NavigationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0101C5BD1C1067D200F6DAA3 /* NavigationDelegate.m */; };
 		0101C5C11C106AB500F6DAA3 /* PushNavigationAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0101C5C01C106AB500F6DAA3 /* PushNavigationAnimator.m */; };
+		0101C5C41C107A1500F6DAA3 /* PopNavigationAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0101C5C31C107A1500F6DAA3 /* PopNavigationAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		0101C5BD1C1067D200F6DAA3 /* NavigationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationDelegate.m; sourceTree = "<group>"; };
 		0101C5BF1C106AB500F6DAA3 /* PushNavigationAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNavigationAnimator.h; sourceTree = "<group>"; };
 		0101C5C01C106AB500F6DAA3 /* PushNavigationAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNavigationAnimator.m; sourceTree = "<group>"; };
+		0101C5C21C107A1500F6DAA3 /* PopNavigationAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopNavigationAnimator.h; sourceTree = "<group>"; };
+		0101C5C31C107A1500F6DAA3 /* PopNavigationAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopNavigationAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 		0101C5BB1C1067B200F6DAA3 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
+				0101C5C21C107A1500F6DAA3 /* PopNavigationAnimator.h */,
+				0101C5C31C107A1500F6DAA3 /* PopNavigationAnimator.m */,
 				0101C5BF1C106AB500F6DAA3 /* PushNavigationAnimator.h */,
 				0101C5C01C106AB500F6DAA3 /* PushNavigationAnimator.m */,
 			);
@@ -214,6 +219,7 @@
 			files = (
 				0101C5A01C105BFA00F6DAA3 /* ViewController.m in Sources */,
 				0101C5BE1C1067D200F6DAA3 /* NavigationDelegate.m in Sources */,
+				0101C5C41C107A1500F6DAA3 /* PopNavigationAnimator.m in Sources */,
 				0101C5B91C105EA300F6DAA3 /* PushViewController.m in Sources */,
 				0101C59D1C105BFA00F6DAA3 /* AppDelegate.m in Sources */,
 				0101C5C11C106AB500F6DAA3 /* PushNavigationAnimator.m in Sources */,
