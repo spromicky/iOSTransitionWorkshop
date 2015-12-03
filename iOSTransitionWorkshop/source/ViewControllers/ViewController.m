@@ -8,8 +8,23 @@
 
 #import "ViewController.h"
 #import "PushViewController.h"
+#import "NavigationDelegate.h"
+
+@interface ViewController ()
+
+@property (nonatomic, strong) NavigationDelegate *navDelegate;
+
+@end
 
 @implementation ViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.navDelegate = [[NavigationDelegate alloc] init];
+    self.navigationController.delegate = self.navDelegate;
+}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

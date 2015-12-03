@@ -64,7 +64,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ay-iW-7gH">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <animations/>
                             </imageView>
                         </subviews>
@@ -73,10 +73,11 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="5ay-iW-7gH" secondAttribute="trailing" id="66k-uf-m2I"/>
                             <constraint firstItem="5ay-iW-7gH" firstAttribute="leading" secondItem="a61-3t-ely" secondAttribute="leading" id="8gd-sT-2Nk"/>
-                            <constraint firstItem="elA-72-fhK" firstAttribute="top" secondItem="5ay-iW-7gH" secondAttribute="bottom" id="DCt-J6-7Le"/>
-                            <constraint firstItem="5ay-iW-7gH" firstAttribute="top" secondItem="Gc6-1l-N61" secondAttribute="bottom" id="eXW-m7-DGp"/>
+                            <constraint firstItem="5ay-iW-7gH" firstAttribute="top" secondItem="Gc6-1l-N61" secondAttribute="bottom" id="KPS-No-ez4"/>
+                            <constraint firstItem="elA-72-fhK" firstAttribute="top" secondItem="5ay-iW-7gH" secondAttribute="bottom" id="Rl5-rw-Grb"/>
                         </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="imageView" destination="5ay-iW-7gH" id="1Dv-eh-Qd4"/>
                     </connections>

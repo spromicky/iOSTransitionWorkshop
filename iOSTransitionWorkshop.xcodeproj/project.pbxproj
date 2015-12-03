@@ -14,6 +14,8 @@
 		0101C5A51C105BFA00F6DAA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0101C5A41C105BFA00F6DAA3 /* Assets.xcassets */; };
 		0101C5A81C105BFA00F6DAA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0101C5A61C105BFA00F6DAA3 /* LaunchScreen.storyboard */; };
 		0101C5B91C105EA300F6DAA3 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0101C5B81C105EA300F6DAA3 /* PushViewController.m */; };
+		0101C5BE1C1067D200F6DAA3 /* NavigationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0101C5BD1C1067D200F6DAA3 /* NavigationDelegate.m */; };
+		0101C5C11C106AB500F6DAA3 /* PushNavigationAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0101C5C01C106AB500F6DAA3 /* PushNavigationAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		0101C5A91C105BFA00F6DAA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0101C5B71C105EA300F6DAA3 /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
 		0101C5B81C105EA300F6DAA3 /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
+		0101C5BC1C1067D200F6DAA3 /* NavigationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationDelegate.h; sourceTree = "<group>"; };
+		0101C5BD1C1067D200F6DAA3 /* NavigationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationDelegate.m; sourceTree = "<group>"; };
+		0101C5BF1C106AB500F6DAA3 /* PushNavigationAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNavigationAnimator.h; sourceTree = "<group>"; };
+		0101C5C01C106AB500F6DAA3 /* PushNavigationAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNavigationAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,8 @@
 		0101C5971C105BFA00F6DAA3 /* iOSTransitionWorkshop */ = {
 			isa = PBXGroup;
 			children = (
-				0101C5AF1C105C0A00F6DAA3 /* source */,
 				0101C5B01C105C1A00F6DAA3 /* resource */,
+				0101C5AF1C105C0A00F6DAA3 /* source */,
 				0101C5981C105BFA00F6DAA3 /* Supporting Files */,
 			);
 			path = iOSTransitionWorkshop;
@@ -80,6 +86,8 @@
 		0101C5AF1C105C0A00F6DAA3 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				0101C5BA1C10679600F6DAA3 /* Delegates */,
+				0101C5BB1C1067B200F6DAA3 /* Transitions */,
 				0101C5B61C105E7800F6DAA3 /* ViewControllers */,
 				0101C59B1C105BFA00F6DAA3 /* AppDelegate.h */,
 				0101C59C1C105BFA00F6DAA3 /* AppDelegate.m */,
@@ -100,12 +108,38 @@
 		0101C5B61C105E7800F6DAA3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0101C5B71C105EA300F6DAA3 /* PushViewController.h */,
-				0101C5B81C105EA300F6DAA3 /* PushViewController.m */,
+				0101C5CF1C11B20100F6DAA3 /* Push */,
 				0101C59E1C105BFA00F6DAA3 /* ViewController.h */,
 				0101C59F1C105BFA00F6DAA3 /* ViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0101C5BA1C10679600F6DAA3 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				0101C5BC1C1067D200F6DAA3 /* NavigationDelegate.h */,
+				0101C5BD1C1067D200F6DAA3 /* NavigationDelegate.m */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		0101C5BB1C1067B200F6DAA3 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				0101C5BF1C106AB500F6DAA3 /* PushNavigationAnimator.h */,
+				0101C5C01C106AB500F6DAA3 /* PushNavigationAnimator.m */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		0101C5CF1C11B20100F6DAA3 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				0101C5B71C105EA300F6DAA3 /* PushViewController.h */,
+				0101C5B81C105EA300F6DAA3 /* PushViewController.m */,
+			);
+			path = Push;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,8 +213,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0101C5A01C105BFA00F6DAA3 /* ViewController.m in Sources */,
+				0101C5BE1C1067D200F6DAA3 /* NavigationDelegate.m in Sources */,
 				0101C5B91C105EA300F6DAA3 /* PushViewController.m in Sources */,
 				0101C59D1C105BFA00F6DAA3 /* AppDelegate.m in Sources */,
+				0101C5C11C106AB500F6DAA3 /* PushNavigationAnimator.m in Sources */,
 				0101C59A1C105BFA00F6DAA3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
