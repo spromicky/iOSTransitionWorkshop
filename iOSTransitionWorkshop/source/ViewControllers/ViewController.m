@@ -7,12 +7,17 @@
 //
 
 #import "ViewController.h"
-#import "PushViewController.h"
+
 #import "NavigationDelegate.h"
+#import "ViewControllerDelegate.h"
+
+#import "PushViewController.h"
+#import "PresentedViewController.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) NavigationDelegate *navDelegate;
+@property (nonatomic, strong) ViewControllerDelegate *vcDelegate;
 
 @end
 
@@ -23,13 +28,20 @@
     [super viewDidLoad];
     
     self.navDelegate = [[NavigationDelegate alloc] init];
+    self.vcDelegate = [[ViewControllerDelegate alloc] init];
+    
     self.navigationController.delegate = self.navDelegate;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    PushViewController *vc = (PushViewController*)segue.destinationViewController;
-    vc.image = self.imageView.image;
+    if ([segue.identifier isEqualToString:@"push"]) {
+        PushViewController *vc = (PushViewController*)segue.destinationViewController;
+        vc.image = self.imageView.image;
+    } else {
+        PresentedViewController *vc = (PresentedViewController*)segue.destinationViewController;
+        vc.transitioningDelegate = self.vcDelegate;
+    }
 }
 
 @end

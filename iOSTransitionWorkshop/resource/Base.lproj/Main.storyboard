@@ -37,7 +37,13 @@
                             <constraint firstItem="Eya-px-PmL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AVj-6g-Z6a"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Root" id="y4x-ai-Nar"/>
+                    <navigationItem key="navigationItem" title="Root" id="Mru-xe-cWu">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="maB-Y7-b1u">
+                            <connections>
+                                <segue destination="UiE-We-gWP" kind="presentation" id="PvI-B7-Sfz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="Eya-px-PmL" id="OE5-0b-kWy"/>
                     </connections>
@@ -45,7 +51,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="nBB-AZ-OHw">
                     <connections>
-                        <segue destination="hFx-sE-wpb" kind="show" id="R1f-7o-W6v"/>
+                        <segue destination="hFx-sE-wpb" kind="show" identifier="push" id="R1f-7o-W6v"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -94,6 +100,42 @@
                 </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1175" y="424"/>
+        </scene>
+        <!--Presented View Controller-->
+        <scene sceneID="wj3-dx-EKV">
+            <objects>
+                <viewController id="UiE-We-gWP" customClass="PresentedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tek-VG-1ye"/>
+                        <viewControllerLayoutGuide type="bottom" id="VUq-En-ibc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3K5-pV-Jva">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUZ-Sm-0us">
+                                <rect key="frame" x="279" y="289.5" width="42" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1Rc-6b-fOb"/>
+                                    <constraint firstAttribute="width" constant="42" id="Ivf-PL-bHQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.23921568630000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tUZ-Sm-0us" firstAttribute="centerX" secondItem="3K5-pV-Jva" secondAttribute="centerX" id="XlU-AF-e6l"/>
+                            <constraint firstItem="tUZ-Sm-0us" firstAttribute="centerY" secondItem="3K5-pV-Jva" secondAttribute="centerY" id="gXO-xe-tOQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gqo-14-J3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="435" y="1194"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0jE-jz-GLV">
