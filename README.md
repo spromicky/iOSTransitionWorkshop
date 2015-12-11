@@ -10,3 +10,4 @@ To see creation history you must checkout to tag with step name:
 - **interactive** - Add interactive behaviour for poped `UIViewController`.
 - **back_gesture** - Turn on native back gesture (`UIScreenEdgePanGestureRecognizer`) for `UINavigationController` .
 - **presenting_controller** - Add modal presented `UIViewController`. Add `UIPresentationController` for not default behaviour.
+- **segue** - Same as **presenting_controller**, but work with custom `UIStoryboardSegue` class. (Crash on iOS8) 
