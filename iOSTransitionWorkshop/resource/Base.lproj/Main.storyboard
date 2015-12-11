@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Root-->
@@ -38,11 +39,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Root" id="Mru-xe-cWu">
-                        <barButtonItem key="rightBarButtonItem" title="Info" id="maB-Y7-b1u">
-                            <connections>
-                                <segue destination="UiE-We-gWP" kind="presentation" id="PvI-B7-Sfz"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Info" id="maB-Y7-b1u">
+                                <connections>
+                                    <segue destination="UiE-We-gWP" kind="presentation" identifier="present" id="PvI-B7-Sfz"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Segue" id="2jH-Rk-qCX">
+                                <connections>
+                                    <segue destination="UiE-We-gWP" kind="presentation" customClass="PresentSegue" id="AeB-hr-cbN"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="Eya-px-PmL" id="OE5-0b-kWy"/>
@@ -158,4 +166,7 @@
     <resources>
         <image name="Nebula" width="2710" height="1694"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="AeB-hr-cbN"/>
+    </inferredMetricsTieBreakers>
 </document>

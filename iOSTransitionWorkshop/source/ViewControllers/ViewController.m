@@ -38,7 +38,7 @@
     if ([segue.identifier isEqualToString:@"push"]) {
         PushViewController *vc = (PushViewController*)segue.destinationViewController;
         vc.image = self.imageView.image;
-    } else {
+    } else if ([segue.identifier isEqualToString:@"present"]) {
         PresentedViewController *vc = (PresentedViewController*)segue.destinationViewController;
         vc.transitioningDelegate = self.vcDelegate;
     }
